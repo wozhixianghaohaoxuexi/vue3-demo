@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts" setup>
-interface Card {
+type Card = {
   id: number;
   image: string;
   desc: string;
@@ -76,6 +76,10 @@ ul {
     &:hover {
       margin-top: -2px;
       box-shadow: 0px 10px 30px rgba($color: #000000, $alpha: 0.2);
+    }
+    a {
+      width: 100%;
+      height: 100%;
     }
     .card-content {
       width: 180px;
