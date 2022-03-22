@@ -28,7 +28,8 @@ export default defineConfig({
   resolve: {
     alias: {
       // 别名对应的路径需要使用绝对路径
-      '@': resolve(__dirname, 'src')
+      '@': resolve(__dirname, 'src'),
+      'assets': resolve(__dirname, 'src/assets')
     }
   }
 })
